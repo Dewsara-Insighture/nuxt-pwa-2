@@ -33,13 +33,13 @@ export default defineNuxtConfig({
           purpose: 'maskable',
         },
       ],
-          // This is to check Open PWA separatly
-      protocol_handlers: [
-        {
-          protocol: "web+nuxtpwa",
-          url: "/?action=%s", // The URL pattern to handle this protocol
-        },
-      ],
+      //     // This is to check Open PWA separatly
+      // protocol_handlers: [
+      //   {
+      //     protocol: "web+nuxtpwa",
+      //     url: "/?action=%s", // The URL pattern to handle this protocol
+      //   },
+      // ],
       related_applications: [
         {
           platform: 'grootpwa',
