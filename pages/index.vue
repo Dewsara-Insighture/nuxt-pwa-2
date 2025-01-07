@@ -3,7 +3,7 @@
       <h1>Welcome to Nuxt PWA App 2</h1>
       <p>This is the Nuxt PWA App 2. So Go back to main PWA</p>
       <button @click="handlePWANavigateHome" class="button">Go Back To PWA 1</button>
-      <a href="#" target="_blank" rel="noopener noreferrer" class="aTag">
+      <a href="https://groot-pwa-app-1.vercel.app" target="_blank" rel="noopener noreferrer" class="aTag">
         Go Back To PWA 1 A Tag
   </a>
     
@@ -12,7 +12,7 @@
   
   <script setup lang="ts">
   function handlePWANavigateHome() {
-    window.location.href = '#';
+    window.location.href = 'https://groot-pwa-app-1.vercel.app';
   }
   </script>
   

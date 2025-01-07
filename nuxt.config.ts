@@ -36,7 +36,7 @@ export default defineNuxtConfig({
       related_applications: [
         {
           platform: 'grootpwa',
-          url: 'https://groot-pwa-app-1.vercel.app//manifest.json',
+          url: 'https://groot-pwa-app-1.vercel.app/manifest.json',
         },
       ],
     },
