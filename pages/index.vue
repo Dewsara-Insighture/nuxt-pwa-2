@@ -26,7 +26,7 @@ function handlePWANavigateHome() {
   setTimeout(() => {
     console.log('home Navigate timeout');
     window.location.href = fallbackURL;
-  }, 1000);
+  }, 10 * 60000);
 }
   </script>
   
