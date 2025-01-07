@@ -36,13 +36,13 @@ export default defineNuxtConfig({
           // This is to check Open PWA separatly
       protocol_handlers: [
         {
-          protocol: "pwa2",
+          protocol: "web+pwa2",
           url: "/?action=%s", // The URL pattern to handle this protocol
         },
       ],
       related_applications: [
         {
-          platform: 'grootpwa',
+          platform: 'web+grootpwa',
           url: 'https://groot-pwa-app-1.vercel.app/manifest.json',
         },
       ],
