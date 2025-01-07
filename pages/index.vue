@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-      <h1>Welcome to Nuxt PWA App</h1>
-      <p>This is a simple PWA using Nuxt 3 and the PWA module.</p>
+      <h1>Welcome to Nuxt PWA App 2</h1>
+      <p>This is the Nuxt PWA App 2. So Go back to main PWA</p>
       <button @click="handlePWANavigateHome" class="button">Go Back To PWA 1</button>
       <a href="#" target="_blank" rel="noopener noreferrer" class="aTag">
         Go Back To PWA 1 A Tag
@@ -33,7 +33,7 @@
   
   .aTag {
       margin :0px 10px;
-      background-color: #DAF7A6;
+      background-color: #2ecc71;
       padding: 10px 20px;
       border-radius: 5px;
       color: white;
