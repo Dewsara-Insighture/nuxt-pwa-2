@@ -12,9 +12,10 @@
   
   <script setup lang="ts">
   function handlePWANavigateHome() {
-    // window.location.href = 'https://groot-pwa-app-1.vercel.app';
-    console.log('window open hit') 
-    window.open('https://groot-pwa-app-1.vercel.app')
+    console.log('window href hit from pwa 2') 
+    window.location.href = 'https://groot-pwa-app-1.vercel.app';
+
+    // window.open('https://groot-pwa-app-1.vercel.app')
   }
 
   </script>
