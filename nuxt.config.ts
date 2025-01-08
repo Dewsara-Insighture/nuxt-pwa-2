@@ -33,12 +33,12 @@ export default defineNuxtConfig({
           purpose: 'maskable',
         },
       ],
-      related_applications: [
-        {
-          platform: 'webapp',
-          url: 'https://groot-pwa-app-1.vercel.app/manifest.json',
-        },
-      ],
+      // related_applications: [
+      //   {
+      //     platform: 'webapp',
+      //     url: 'https://groot-pwa-app-1.vercel.app/manifest.json',
+      //   },
+      // ],
     },
     workbox: {
       navigateFallback: '/',
