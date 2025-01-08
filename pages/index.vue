@@ -14,20 +14,7 @@
   function handlePWANavigateHome() {
     window.location.href = 'https://groot-pwa-app-1.vercel.app';
   }
-// function handlePWANavigateHome() {
-//     console.log('home Navigate');
-//   const protocolHandler = "web+grootpwa://navigate";
-//   const fallbackURL = "https://groot-pwa-app-1.vercel.app/";
 
-//   // Attempt to navigate using the protocol
-//   window.location.href = protocolHandler;
-
-//   // Set a fallback in case protocol navigation fails
-//   setTimeout(() => {
-//     console.log('home Navigate timeout');
-//     window.location.href = fallbackURL;
-//   }, 10 * 60000);
-// }
   </script>
   
   <style scoped>
