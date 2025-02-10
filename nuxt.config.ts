@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
-  app: {
-    baseURL: '/user/'  // This ensures the app serves under /user/
-  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
