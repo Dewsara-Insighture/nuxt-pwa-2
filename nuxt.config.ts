@@ -3,12 +3,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/']
-    }
-  },
+  // app: {
+  //   baseURL: '/user/',  // Ensures Nuxt routes are prefixed correctly
+  //   buildAssetsDir: '/user/_nuxt/' // Ensures assets load under /user/
+  // },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //     routes: ['/']
+  //   }
+  // },
 
   // Router configuration
   router: {
