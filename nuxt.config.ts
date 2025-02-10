@@ -18,11 +18,11 @@ export default defineNuxtConfig({
   },
 
   // Add vite configuration
-  vite: {
-    build: {
-      assetsDir: '_nuxt'
-    }
-  },
+  // vite: {
+  //   build: {
+  //     assetsDir: '_nuxt'
+  //   }
+  // },
 
   pwa: {
     registerType: 'autoUpdate',
