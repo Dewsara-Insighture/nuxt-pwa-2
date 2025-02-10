@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     routes: ['/']
-  //   }
-  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
+  },
 
   // Router configuration
   router: {
@@ -18,11 +18,11 @@ export default defineNuxtConfig({
   },
 
   // Add vite configuration
-  // vite: {
-  //   build: {
-  //     assetsDir: '_nuxt'
-  //   }
-  // },
+  vite: {
+    build: {
+      assetsDir: '_nuxt'
+    }
+  },
 
   pwa: {
     registerType: 'autoUpdate',
