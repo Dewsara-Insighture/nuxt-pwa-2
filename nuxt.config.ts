@@ -3,6 +3,17 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
+  app: {
+    baseURL: '/user/',
+    buildAssetsDir: '/_app2/', // Unique assets directory
+  },
+  
+  // Configure router base
+  router: {
+    options: {
+      strict: true
+    }
+  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
