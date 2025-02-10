@@ -8,7 +8,9 @@ export const useIndexedDB = () => {
   let db: IDBPDatabase | null = null;
 
   const initDB = async () => {
+    console.log('initDB 1');
     if (!db) {
+        console.log('initDB 2:- ' , db);
       db = await openDB(DB_NAME, DB_VERSION, {
         upgrade(db) {
           if (!db.objectStoreNames.contains(STORE_NAME)) {
@@ -16,11 +18,13 @@ export const useIndexedDB = () => {
           }
         }
       });
+      console.log('initDB 3:- ' , db);
     }
   };
 
   const addItem = async (item: { name: string }) => {
     await initDB();
+    console.log('add Item after init db');
     return db?.transaction(STORE_NAME, 'readwrite').objectStore(STORE_NAME).add(item);
   };
 

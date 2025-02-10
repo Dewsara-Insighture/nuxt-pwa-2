@@ -8,6 +8,7 @@ const newItem = ref('');
 const items = ref<{ id: number; name: string }[]>([]);
 
 const addNewItem = async () => {
+  console.log('clicked :- ', newItem.value);
   if (!newItem.value) return;
   await addItem({ name: newItem.value });
   newItem.value = '';
