@@ -4,10 +4,33 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
   
-  // Configure router base
+  app: {
+    baseURL: '/user',
+    buildAssetsDir: '/_nuxt/', // Changed to default Nuxt assets directory
+    cdnURL: process.env.NODE_ENV === 'production' 
+      ? 'https://groot-pwa-app-1.vercel.app' 
+      : ''
+  },
+
+  // Add nitro configuration
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
+  },
+
+  // Router configuration
   router: {
     options: {
       strict: true
+    }
+  },
+
+  // Add vite configuration
+  vite: {
+    build: {
+      assetsDir: '_nuxt'
     }
   },
   pwa: {
