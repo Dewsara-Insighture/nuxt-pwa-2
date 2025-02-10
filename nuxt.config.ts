@@ -3,16 +3,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
-  
-  app: {
-    baseURL: '/user',
-    buildAssetsDir: '/_nuxt/', // Changed to default Nuxt assets directory
-    cdnURL: process.env.NODE_ENV === 'production' 
-      ? 'https://groot-pwa-app-1.vercel.app' 
-      : ''
-  },
-
-  // Add nitro configuration
   nitro: {
     prerender: {
       crawlLinks: true,
@@ -33,6 +23,7 @@ export default defineNuxtConfig({
       assetsDir: '_nuxt'
     }
   },
+
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
