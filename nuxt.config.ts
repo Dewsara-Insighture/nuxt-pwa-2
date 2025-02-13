@@ -4,10 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@vite-pwa/nuxt'],
 
-  // app: {
-  //   baseURL: '/user/',
-  //   buildAssetsDir: '/_nuxt/', // Unique assets directory
-  // },
+  app: {
+    baseURL: "/pqrs", // Ensures Nuxt serves content under /pqrs
+  },
 
   pwa: {
     registerType: 'autoUpdate',
