@@ -20,7 +20,10 @@ const loadItems = async () => {
 };
 
 async function handlePWANavigateHome() {
-  await navigateTo('/')
+  console.log('navigation clicked');
+  await navigateTo('https://groot-pwa-app-1.vercel.app', {
+  external: true
+})
 }
 
 onMounted(loadItems);
