@@ -19,6 +19,10 @@ const loadItems = async () => {
   items.value = await getItems() || [];
 };
 
+async function handlePWANavigateHome() {
+  await navigateTo('/')
+}
+
 onMounted(loadItems);
 </script>
 
@@ -41,10 +45,24 @@ onMounted(loadItems);
         {{ item.name }}
       </li>
     </ul>
+
+    <button @click="handlePWANavigateHome" class="navigate-button">
+      Go to Parent PWA App
+    </button>
   </div>
 </template>
 
 <style scoped>
+.navigate-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4dba87;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width : 180px
+}
 .container {
   padding: 1.5rem; 
   display: flex;
